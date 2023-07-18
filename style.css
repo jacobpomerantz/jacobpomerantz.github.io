@@ -1,6 +1,6 @@
 .topnav{
     background-color: darkcyan;
-    position:fixed;
+    position:relative;
     width:100%;
     top:0;
     overflow:hidden;
