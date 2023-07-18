@@ -36,6 +36,6 @@
     text-align:center;
     /* white-space:normal; */
 .navfit{
-    float:left;
+    display:block;
     width:19.99999%;
 }
