@@ -1,4 +1,4 @@
-ul.nav {
+/* ul.nav {
     width:100%;
     margin:0 auto;
     padding:0;
@@ -24,4 +24,14 @@ ul.nav {
 .nav a:hover { 
     background:#4255a2;
     border:none;
-}
+} */
+
+/* .baritem {
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+    text-align:center;
+    /* white-space:normal; */
