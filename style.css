@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    background-color: #555;
+    background-color: #0a68c7;
     overflow: auto;
   }
   
@@ -10,14 +10,15 @@
     padding: 12px;
     color: white;
     text-decoration: none;
-    font-size: 17px;
-    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    font-family: "Playfair+Display";
+    font-size: 18px;
+    width: 20%; /* 5 equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
   
   /* Add a background color on mouse-over */
   .navbar a:hover {
-    background-color: #000;
+    background-color: #000000;
   }
   
   /* Style the current/active link */
