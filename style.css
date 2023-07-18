@@ -12,6 +12,7 @@
     text-decoration: none;
     font-family:"Playfair+Display";
     font-size: 18px;
+    display:block;
     width: 19.99%; /* 5 equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
