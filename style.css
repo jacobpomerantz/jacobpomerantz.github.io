@@ -43,19 +43,19 @@
   }
 
   .section1{
-    padding:0 8px;
+    padding:64px 16px;
     margin:16px;
   }
 
   .section1-image{
     width: 49.999%;
     height: auto;
-
-
+    padding:0px, 12px;
 
   }
 
   .section1-text{
+    padding:0px, 12px;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     text-align: center!important;
     width: 49.999%;
