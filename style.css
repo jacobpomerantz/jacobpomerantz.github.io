@@ -19,7 +19,8 @@
   
   /* Add a background color on mouse-over */
   .navbar a:hover {
-    background-color: #ffffff;
+    color:#ffffff;
+    background-color: #000000;
   }
   
   /* Style the current/active link */
