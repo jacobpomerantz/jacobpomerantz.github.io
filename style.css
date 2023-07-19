@@ -48,15 +48,15 @@
   }
 
   .section1-image{
-    width: 33.333%;
-    height: 33.333%;
+    width: 300px;
+    height: auto;
     padding:0px, 12px;
     float:left;
 
   }
 
   .section1-text{
-    width: 10%;
+    width: 33.333%;
     height:auto;
     padding:0px, 12px;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
