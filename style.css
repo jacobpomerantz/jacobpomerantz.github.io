@@ -27,7 +27,7 @@
   .nameheading{
     background-image: url('https://lh3.googleusercontent.com/pw/AIL4fc8CwsWWqvK0mtN-Unq-SxFVSYqPT6DnLPZI3a39E7xd0lFgZ031GUXTvmhmjr4eYqKR1URfof2caAJoO90legZ87_FSNVIVoY3AdTQc3QyFb7yqSQ=w2400');
     background-position: center top;
-    background-size: auto;
+    background-size: contain;
     overflow: hidden;
     
   }
