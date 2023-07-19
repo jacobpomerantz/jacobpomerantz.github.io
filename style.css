@@ -27,3 +27,8 @@
   .navbar a.active {
     background-color: #04AA6D;
   }
+
+  .section1{
+    text-align:center!important;
+    padding:0 8px;
+  }
