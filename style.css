@@ -18,12 +18,15 @@
   }
   
   /* Add a background color on mouse-over */
-  .navbar a:hover {
-    color:#ffffff!important;
+    .navbar a:hover {
     background-color: #000000!important;
+    color:#ffffff!important;
   }
   
   /* Style the current/active link */
   .navbar a.active {
     background-color: #04AA6D;
+  }
+  .card{
+    width: 3px card;
   }
