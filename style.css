@@ -59,7 +59,7 @@
   .section1-text{
     width: 50%;
     height:auto;
-    padding:12px;
+    /* padding:12px; */
     text-align: center!important;
     font-family: "Playfair+Display";
     float:right;
