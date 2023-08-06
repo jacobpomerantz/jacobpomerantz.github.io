@@ -29,9 +29,29 @@
   .nameheading{
     background-image: url('https://lh3.googleusercontent.com/pw/AIL4fc8CwsWWqvK0mtN-Unq-SxFVSYqPT6DnLPZI3a39E7xd0lFgZ031GUXTvmhmjr4eYqKR1URfof2caAJoO90legZ87_FSNVIVoY3AdTQc3QyFb7yqSQ=w2400');
     background-position: center ;
+    position:relative;
     overflow: hidden;
     
   }
+  .custom-shape-divider-bottom-1691333818 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1691333818 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-bottom-1691333818 .shape-fill {
+    fill: #FFFFFF;
+}
 
   .nameheading p{
     text-align: center; 
