@@ -205,7 +205,9 @@ html {
 }
 
 .main-content .section-light.contact {
-  padding: 000px;
+  padding-top: 20px;
+  padding-bottom:20px;
+
 }
 
 .main-content .section-light.contact button {
