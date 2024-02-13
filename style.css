@@ -76,15 +76,17 @@
 .skill-tag {
   display: inline-block;
   padding: 0.25em 0.75em;
-  margin: 0.25em;
-  background-color: #007bff; /* Your primary color */
+  background-color: #574b90;
   color: white;
   font-size: 0.9em;
-  border-radius: 0.2em; /* Adjust to your preference */
   text-transform: uppercase;
   cursor: default;
+  border-radius: 5px;
 }
+.skill-tag.alt-color{
+  background-color: #3d5af1;
 
+}
 /* Optional: Add styles for the scrollbar to match your theme */
 ::-webkit-scrollbar {
   width: 10px;
@@ -112,4 +114,14 @@ scrollbar-color: #888 #f1f1f1;
 /* Ensuring font consistency */
 body, h2, h3, p {
   font-family: 'Your Font Family', sans-serif; /* Replace with your font choice */
+}
+
+#projects,.project{
+  /* dark background */
+  background-color: #343a40;
+  color:white;
+}
+
+.color-white{
+  color: white !important;
 }
