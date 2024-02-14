@@ -125,3 +125,13 @@ body, h2, h3, p {
 .color-white{
   color: white !important;
 }
+/* Optional: Customize the carousel appearance */
+#otherProjectsCarousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  border-radius: 5px; /* Rounded corners for caption */
+}
+
+#otherProjectsCarousel img {
+  height: 300px; /* Fixed height for images, or use 'height:auto;' for auto-adjust */
+  object-fit: cover; /* Cover the carousel-item with the image */
+}
