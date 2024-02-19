@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jacob | Project Name</title>
+        <link rel="stylesheet" href="../bootstrap.min.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+<body  class="project">
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../portfolio.html">Projects</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Philosophy</a>
+              </li> -->
+            </ul>
+            <button class="btn btn-outline-success" type="submit">Contact</button>
+            
+          </div>
+        </div>
+      </nav>
+</header>
+<main>
+
+    <div class="container mt-5" style="padding-top: 50px;">
+      <h2 class="text-center" style="padding-bottom:25px">Electric Skateboard</h2>
+        <div class="row">
+            <!-- Left Column for Image and Collaborators -->
+            <div class="col-md-6">
+                <!-- Scrollable Image Box -->
+                <div style="height: 500px; overflow-y: auto; padding-right: 15px;">
+                    <img src="../Portfolio_Documents/DTC_Team1.jpg" class="img-fluid mb-2" alt="Project Image">
+                    <img src="../Portfolio_Documents/DTC_Team2.jpg" class="img-fluid mb-2" alt="Project Image">
+                    <!-- Add more images with the same structure as needed -->
+                </div>
+                <!-- Collaborators -->
+                <div style="padding-top:20px;">
+                    <h3>Collaborators:</h3>
+                    <div class="mb-3">
+                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/joshuadfeist/" style="color:aliceblue">Joshua Feist</a></span>
+
+                      <!-- Add more skill tags as needed -->
+                  </div>
+                    <!-- Add more collaborators as needed -->
+                </div>
+            </div>
+
+            <!-- Right Column for Text and Skills -->
+            <div class="col-md-6">
+
+                <!-- Scrollable Text Box -->
+                <div style="height: 500px; overflow-y: auto; padding-left: 15px;">
+                    <p>
+                        During my freshman year of college, I worked with one of my friends to design and assemble an electric skateboard. We began this process by determining our desired specifications: range, speed, and power. While hyper-unrealistic, I thought it would be cool to be able to skateboard from Evanston to Chicago (I skated to Skokie once ~3 miles away, never doing that again). 
+
+                        Based on the selected speed and power, we chose the gear ratio and motors. As the gear ratio was directly impacted by the size of the wheel, we decided it would be easiest to buy a previously manufactured truck kit with motor mounts and gears. This would limit the in-house manufacturing time. The kit we chose had a gear ratio of 2.4. The motors we chose to achieve our desired speed had a KV rating of 192 “rpm per volt.” This translated to a maximum speed of about 30mph with a load and 27 mph without one.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        Next, we determined we were using lithium ion cells and thus the number of cells in series based on the necessary voltage of the motors. Range and cost determined what type of cell we used in particular and how many were in parallel. We decided on using 26650 cells in a 12s3p configuration. We found recycled cells and bought them. Then we soldered the busbars and assembled the parallel packs.
+
+                        A BMS was selected on the # of cells in series and the power of the battery then a dual motor ESC (electronic speed controller) was chosen to meet voltage specifications determined by the two motors.
+                    </p>
+                    <!-- Add more text as needed -->
+                </div>
+                <!-- Skills Tags -->
+                <div style="padding-top:20px; padding-left: 15px;">
+                    <h3>Skills Gained:</h3>
+                    <div class="mb-3">
+                        <span class="skill-tag">Conventional Milling</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Battery Assembly</span>
+                        <!-- Add more skill tags as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other Projects Carousel -->
+<div id="otherProjectsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Project 1"></button>
+      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="1" aria-label="Project 2"></button>
+      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="2" aria-label="Project 3"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="../Portfolio_Documents/">
+          <img src="../Portfolio_Documents/figure 2a.png" class="d-block w-100" alt="Project 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Project 1 Title</h5>
+            <p>Short description of Project 1.</p>
+          </div>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="link-to-your-project-2.html">
+          <img src="../Portfolio_Documents/Using_Mill.jpg" class="d-block w-100" alt="Project 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Project 2 Title</h5>
+            <p>Short description of Project 2.</p>
+          </div>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="link-to-your-project-3.html">
+          <img src="../Portfolio_Documents/Using_Mill.jpg" class="d-block w-100" alt="Project 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Project 3 Title</h5>
+            <p>Short description of Project 3.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+</main>
+
+
+<footer>
+  <p>Here is a bunch of random text Here is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random text</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

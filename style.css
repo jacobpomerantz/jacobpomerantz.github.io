@@ -122,6 +122,10 @@ body, h2, h3, p {
   color:white;
 }
 
+#projects h2{
+  font-family: merriwea;
+}
+
 .color-white{
   color: white !important;
 }
@@ -134,4 +138,15 @@ body, h2, h3, p {
 #otherProjectsCarousel img {
   height: 300px; /* Fixed height for images, or use 'height:auto;' for auto-adjust */
   object-fit: cover; /* Cover the carousel-item with the image */
+}
+
+.skills h2{
+  padding-top: 15px;
+}
+
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 36px;
 }
