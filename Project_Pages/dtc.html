@@ -3,9 +3,55 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jacob | Project Name</title>
+        <title>Jacob | Formula Work</title>
         <link rel="stylesheet" href="../bootstrap.min.css">
         <link rel="stylesheet" href="../style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+        <style>
+          .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.25rem; /* Adjust the border-radius as needed */
+            width: 100%; /* Ensures the card takes the full width of its container */
+            height: 300px; /* Example fixed height */
+          }
+          .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the card area, maintaining aspect ratio */
+            transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+          }
+          .project-card:hover img {
+            transform: scale(1.05); /* Zoom effect on hover */
+          }
+          .project-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent overlay */
+            color: white;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.5s ease; /* Smooth transition for slide effect */
+          }
+          .project-card:hover .project-info {
+            transform: translateY(0);
+          }
+
+          #projects {
+            padding-top: 0px !important;
+          }
+          .container > .row:last-child {
+            margin-bottom: 0 !important;
+          }
+          .container > .row > .col-md-6 {
+            padding-bottom: 0 !important;
+          }
+        </style>
+        
+
     </head>
 <body  class="project">
 
@@ -37,21 +83,26 @@
 <main>
 
     <div class="container mt-5" style="padding-top: 50px;">
-      <h2 class="text-center" style="padding-bottom:25px">"The Foam Slotter"</h2>
+      <h2 class="text-center" style="padding-bottom:25px">EV Battery Container & Mounts</h2>
         <div class="row">
             <!-- Left Column for Image and Collaborators -->
             <div class="col-md-6">
                 <!-- Scrollable Image Box -->
                 <div style="height: 500px; overflow-y: auto; padding-right: 15px;">
-                    <img src="../Portfolio_Documents/DTC_Team1.jpg" class="img-fluid mb-2" alt="Project Image">
-                    <img src="../Portfolio_Documents/DTC_Team2.jpg" class="img-fluid mb-2" alt="Project Image">
+                    <img src="../Portfolio_Documents/_NFR24.JPG" class="img-fluid mb-2" alt="NFR24">
+                    <img src="../Portfolio_Documents/full_assem_with_lid.JPG" class="img-fluid mb-2" alt="Accumulator Container with Lid">
+                    <img src="../Portfolio_Documents/Titanium_Mount_Assembly.JPG" class="img-fluid mb-2" alt="Titanium Mount Assembly">
+                    <img src="../Portfolio_Documents/Accumulator_Mount_v8_FEA.JPG" class="img-fluid mb-2" alt="FEA">
+
                     <!-- Add more images with the same structure as needed -->
                 </div>
                 <!-- Collaborators -->
-                <div style="padding-top:20px;">
+                <div style="padding-top:30px;">
                     <h3>Collaborators:</h3>
                     <div class="mb-3">
-                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/joshuadfeist/" style="color:aliceblue">Joshua Feist</a></span>
+                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/youssef-abdelhalim/" style="color:aliceblue; text-decoration: none;">Youssef Abdelhalim</a></span>
+                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/benrcox/" style="color:aliceblue; text-decoration: none;">Ben Cox</a></span>
+
 
                       <!-- Add more skill tags as needed -->
                   </div>
@@ -65,27 +116,43 @@
                 <!-- Scrollable Text Box -->
                 <div style="height: 500px; overflow-y: auto; padding-left: 15px;">
                     <p>
-                        During my freshman year of college, I worked with one of my friends to design and assemble an electric skateboard. We began this process by determining our desired specifications: range, speed, and power. While hyper-unrealistic, I thought it would be cool to be able to skateboard from Evanston to Chicago (I skated to Skokie once ~3 miles away, never doing that again). 
-
-                        Based on the selected speed and power, we chose the gear ratio and motors. As the gear ratio was directly impacted by the size of the wheel, we decided it would be easiest to buy a previously manufactured truck kit with motor mounts and gears. This would limit the in-house manufacturing time. The kit we chose had a gear ratio of 2.4. The motors we chose to achieve our desired speed had a KV rating of 192 “rpm per volt.” This translated to a maximum speed of about 30mph with a load and 27 mph without one.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        Next, we determined we were using lithium ion cells and thus the number of cells in series based on the necessary voltage of the motors. Range and cost determined what type of cell we used in particular and how many were in parallel. We decided on using 26650 cells in a 12s3p configuration. We found recycled cells and bought them. Then we soldered the busbars and assembled the parallel packs.
-
-                        A BMS was selected on the # of cells in series and the power of the battery then a dual motor ESC (electronic speed controller) was chosen to meet voltage specifications determined by the two motors.
+                      <strong>Introduction:</strong>
+                      <br>
+                      <br>
+                      Throughout the past 2 years, I have been an active member of the Northwestern Formula Society of Automotive Engineers. Joining the Powertrain subteam in the beginning of my Freshman year, I have spent my time learning about how the car moves. Our team designs, manufactures, and implements the electric battery, the drive shafts, the transmission and the limited slip differential.
+                      <br>
+                      <br>
+                      <strong>Mission Statement:</strong>
+                      <br>
+                      <br>
+                      Our team works to make the car move in time for competition while minimizing cost and weight. 
+                      <br>
+                      <br>
+                      <strong>My Project:</strong>
+                      <br>
+                      <br>
+                      2022: During my freshman year, I was one of the team lead manufacturers. I used conventional mills, CNCs, and most significantly, the waterjet, to manufacture various components for the car. I altered maintenance plugs to fit to specification, created jigs to support car tabs and frame tubes during welding, and manufactured all tabs through use of the waterjet. Furthermore, I used the waterjet to manufacture the 2022 accumulator container from 1 ⁄ 8 '' steel and electrical boxes from polycarbonate. This involved extensive use of the waterjet, learning the ins and outs of the machine.
+                      <br>
+                      <br>
+                      2023: The project I am most proud of is what I have worked on throughout the course of this year. This year, I have worked with a team of other engineers to design and manufacture the accumulator container. There is an electrical team and a mechanical team. My role on the mechanical team was designing the container itself, and the mounts to support it within the chassis. Below are some things I learned about through my role working on the accumulator container and mounts:
+                      <ul>
+                        <li>Sheet Metal: We designed the container from <i>one piece</i> of sheet metal. We have outsourced manufacturing to a local company, Bystronic, for lasercutting and sheet metal bending of the accumulator. I worked with Bystronic to design this container keeping in mind bend radiuses, flange length, and Aluminum 6061 material properties.</li>
+                        <li>Adhesives: We are using Betamate 2090 to adhere the accumulator mounts to the container. Rules specify that the container must be able to withstand 15 kN in each direction. After doing some math, we determined that Betamate 2090 would be strong enough to connect the mounts to the container.</li>
+                        <li>FEA and Topology Optimization: My initial mount design weighed roughly 860 grams. These were made from plain carbon steel. After receiving a sponsorship from an additive manufacutring company, we were able to 3D print optimized mounts from titanium. Working with an upper classmen, we optimized these mounts from titatnium and decreased the weight to 153 grams. </li>
+                      </ul>
+                      
                     </p>
                     <!-- Add more text as needed -->
                 </div>
                 <!-- Skills Tags -->
-                <div style="padding-top:20px; padding-left: 15px;">
+                <div style="padding-top:30px; padding-left: 15px;">
                     <h3>Skills Gained:</h3>
                     <div class="mb-3">
-                        <span class="skill-tag">Conventional Milling</span>
-                        <span class="skill-tag">Soldering</span>
-                        <span class="skill-tag">Battery Assembly</span>
+                        <span class="skill-tag">Battery Design</span>
+                        <span class="skill-tag">CAD</span>
+                        <span class="skill-tag">FEA</span>
+                        <span class="skill-tag">Teamwork & Communication</span>
+
                         <!-- Add more skill tags as needed -->
                     </div>
                 </div>
@@ -93,63 +160,80 @@
         </div>
     </div>
 
-    <!-- Other Projects Carousel -->
-<div id="otherProjectsCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Project 1"></button>
-      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="1" aria-label="Project 2"></button>
-      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="2" aria-label="Project 3"></button>
-    </div>
-  
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="../Portfolio_Documents/">
-          <img src="../Portfolio_Documents/figure 2a.png" class="d-block w-100" alt="Project 1">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 1 Title</h5>
-            <p>Short description of Project 1.</p>
+    <section class="pt-5 pb-5" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Other Projects</h2>
           </div>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="link-to-your-project-2.html">
-          <img src="../Portfolio_Documents/Using_Mill.jpg" class="d-block w-100" alt="Project 2">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 2 Title</h5>
-            <p>Short description of Project 2.</p>
+          <div class="col-md-4">
+            <a href="../Project_Pages/hiv.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/Machine_Thumbnail.jpg" alt="HIV Implant Automation" class="img-fluid">
+              <div class="project-info">
+                <h5>HIV Implant Automation</h5>
+                <p>Design and manufacture of a machine for HIV implant medication.</p>
+              </div>
+            </div>
+          </a>
           </div>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="link-to-your-project-3.html">
-          <img src="../Portfolio_Documents/Using_Mill.jpg" class="d-block w-100" alt="Project 3">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 3 Title</h5>
-            <p>Short description of Project 3.</p>
+          <div class="col-md-4">
+            <a href="../Project_Pages/skateboard.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/Sk8_Orange.jpg" alt="Electric Skateboard" class="img-fluid">
+              <div class="project-info">
+                <h5>Electric Skateboard</h5>
+                <p>Collaboration on an electric skateboard with a recycled battery pack.</p>
+              </div>
+            </div>
+          </a>
           </div>
-        </a>
+          <div class="col-md-4">
+            <a href="../Project_Pages/dtc.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/X_Ray_Chair.jpg" alt="X-Ray Positioning Device" class="img-fluid">
+              <div class="project-info">
+                <h5>X-Ray Positioning Device</h5>
+                <p>Designing a solution for an incapacitated individual needing lung x-rays.</p>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
       </div>
-    </div>
-  
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
+    </section>
+    
 </main>
 
 
-<footer>
-  <p>Here is a bunch of random text Here is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random text</p>
+<footer class="bg-dark text-light" style="padding-top: 10px; padding-bottom: 10px;">
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col-4 text-start">
+        <!-- Left: LinkedIn and Email Icons -->
+        <a href="https://www.linkedin.com/in/jacob-pomerantz-bab597270/" target="_blank" style="color: #ffffff; margin-right: 15px; text-decoration: none;">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="mailto:jacobpomerantz2025@u.northwestern.edu" style="color: #ffffff;">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </div>
+      
+      <!-- Center: Copyright Notice -->
+      <div class="col-4">
+          &copy; 2024 Jacob Pomerantz
+      </div>
+      
+      <!-- Right: Upwards Arrow -->
+      <div class="col-4 text-end">
+        <a href="#" style="color: #ffffff;">
+            <i class="fas fa-chevron-up fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>

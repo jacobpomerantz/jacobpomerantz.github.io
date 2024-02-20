@@ -150,3 +150,30 @@ body, h2, h3, p {
   font-style: normal;
   font-size: 36px;
 }
+
+.parallax-container {
+  position: relative;
+  background-image: url('./Portfolio_Documents/Sunset.jpg');
+  height: 100vh; /* Adjust the height as needed */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Ensure text is readable over the background image */
+  width: 90%; /* Adjust width as needed */
+  text-align: center;
+}
+
+.parallax-text h1,
+.parallax-text p {
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent overlay to the text for better readability */
+  display: inline-block;
+  padding: 0.5em;
+}

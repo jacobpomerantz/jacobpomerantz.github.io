@@ -3,9 +3,55 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jacob | Project Name</title>
+        <title>Jacob | Formula Work</title>
         <link rel="stylesheet" href="../bootstrap.min.css">
         <link rel="stylesheet" href="../style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+        <style>
+          .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.25rem; /* Adjust the border-radius as needed */
+            width: 100%; /* Ensures the card takes the full width of its container */
+            height: 300px; /* Example fixed height */
+          }
+          .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the card area, maintaining aspect ratio */
+            transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+          }
+          .project-card:hover img {
+            transform: scale(1.05); /* Zoom effect on hover */
+          }
+          .project-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent overlay */
+            color: white;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.5s ease; /* Smooth transition for slide effect */
+          }
+          .project-card:hover .project-info {
+            transform: translateY(0);
+          }
+
+          #projects {
+            padding-top: 0px !important;
+          }
+          .container > .row:last-child {
+            margin-bottom: 0 !important;
+          }
+          .container > .row > .col-md-6 {
+            padding-bottom: 0 !important;
+          }
+        </style>
+        
+
     </head>
 <body  class="project">
 
@@ -37,21 +83,29 @@
 <main>
 
     <div class="container mt-5" style="padding-top: 50px;">
-      <h2 class="text-center" style="padding-bottom:25px">Electric Skateboard</h2>
+      <h2 class="text-center" style="padding-bottom:25px">HIV Implant Automation</h2>
         <div class="row">
             <!-- Left Column for Image and Collaborators -->
             <div class="col-md-6">
                 <!-- Scrollable Image Box -->
                 <div style="height: 500px; overflow-y: auto; padding-right: 15px;">
-                    <img src="../Portfolio_Documents/DTC_Team1.jpg" class="img-fluid mb-2" alt="Project Image">
-                    <img src="../Portfolio_Documents/DTC_Team2.jpg" class="img-fluid mb-2" alt="Project Image">
+                    <img src="../Portfolio_Documents/HIV_assembly.JPG" class="img-fluid mb-2" alt="CAD Assembly">
+                    <img src="../Portfolio_Documents/4steps.jpg" class="img-fluid mb-2" alt="Operational Steps">
+                    <img src="../Portfolio_Documents/Tombstone_Drawing.jpg" class="img-fluid mb-2" alt="Tombstone Drawing">
+                    <img src="../Portfolio_Documents/Rotating_Centerpiece_Drawing.jpg" class="img-fluid mb-2" alt="Centerpiece Drawing">
+                    <img src="../Portfolio_Documents/Bushing_Drawings.jpg" class="img-fluid mb-2" alt="Bushings Drawing">
+                    <img src="../Portfolio_Documents/lathe.jpg" class="img-fluid mb-2" alt="Lathe">
+                    <img src="../Portfolio_Documents/Bushings.jpg" class="img-fluid mb-2" alt="Bushings">
+
                     <!-- Add more images with the same structure as needed -->
                 </div>
                 <!-- Collaborators -->
-                <div style="padding-top:20px;">
+                <div style="padding-top:30px;">
                     <h3>Collaborators:</h3>
                     <div class="mb-3">
-                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/joshuadfeist/" style="color:aliceblue">Joshua Feist</a></span>
+                      <span class="skill-tag alt-color"><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/ehmann-kornel.html" style="color:aliceblue; text-decoration: none;">Professor Kornel Ehmann</a></span>
+                      <span class="skill-tag alt-color"><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/guo-ping.html" style="color:aliceblue; text-decoration: none;">Professor Ping Guo</a></span>
+
 
                       <!-- Add more skill tags as needed -->
                   </div>
@@ -65,27 +119,58 @@
                 <!-- Scrollable Text Box -->
                 <div style="height: 500px; overflow-y: auto; padding-left: 15px;">
                     <p>
-                        During my freshman year of college, I worked with one of my friends to design and assemble an electric skateboard. We began this process by determining our desired specifications: range, speed, and power. While hyper-unrealistic, I thought it would be cool to be able to skateboard from Evanston to Chicago (I skated to Skokie once ~3 miles away, never doing that again). 
-
-                        Based on the selected speed and power, we chose the gear ratio and motors. As the gear ratio was directly impacted by the size of the wheel, we decided it would be easiest to buy a previously manufactured truck kit with motor mounts and gears. This would limit the in-house manufacturing time. The kit we chose had a gear ratio of 2.4. The motors we chose to achieve our desired speed had a KV rating of 192 “rpm per volt.” This translated to a maximum speed of about 30mph with a load and 27 mph without one.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        Next, we determined we were using lithium ion cells and thus the number of cells in series based on the necessary voltage of the motors. Range and cost determined what type of cell we used in particular and how many were in parallel. We decided on using 26650 cells in a 12s3p configuration. We found recycled cells and bought them. Then we soldered the busbars and assembled the parallel packs.
-
-                        A BMS was selected on the # of cells in series and the power of the battery then a dual motor ESC (electronic speed controller) was chosen to meet voltage specifications determined by the two motors.
+                      <strong>Introduction:</strong>
+                      <br>
+                      <br>
+                      In the fall of 2023, I began as a research assistant working to design, manufacture, and assemble a machine that makes HIV implant medication. This project was previously progressed by grad students, and I picked up the project after they graduated.
+                      <br>
+                      <br>
+                      <strong>Goal:</strong>
+                      <br>
+                      <br>
+                      The end goal of this project is to have a functioning machine that can produce HIV arm implants without human assistance. The machine has 4 steps:
+                    <ol>
+                        <li>First, cut cannula tubes made from TPU to length.</li>
+                        <li>Second, seal one end of the machine.</li>
+                        <li>Third, insert the medication tablets.</li>
+                        <li>Fourth, seal the other end and remove the implant from the assembly line.</li>
+                    </ol>
+                      <br>
+                      <strong>Completed Tasks:</strong>
+                      <br>
+                      <br>
+                      Thus far, this project has been a mess to say the least. Many of the components were either designed incorrectly or manufactured incorrectly. Below is a list of tasks I have completed or am working on for this project:
+                      <br>
+                      <br>
+                      <ul>
+                        <li>Bushings: The baseplate was manufactured with m5 clearance holes while the tombstone was drilled with m4 screw holes. Working with a shop professional, we measured the required dimensions, drew a schematic, then using the lathe, I manufactured bushings as an "adapter" between the two surfaces.  </li>
+                        <li>Gear Mounting: One issue with the <i>tombstone</i>, the center component of the machine was that it was missing a clearance hole for a small gear. A small gear attached to a stepper motor was designed to rotate a large center gear which performs the tasks of the machine. This hole was missing, so after learning about pitch diameters, I measured and milled the clearance hole for the small gear.</li>
+                        <li>Logistical Operations: Many machine components were missing when I began this project. The BOM included certain components not included in the CAD model and both of which included many components I was missing. After conversations with my professors, I specified, contacted, and ordered the components required to assemble this machine. </li>
+                      </ul>
+                      <br>
+                      <strong>Future Tasks:</strong>
+                      <br>
+                      <br>
+                      Moving forward, there are many parts of this machine that need to be finished. For starters, the left loader, intended to hold the medication while pneumatics insert them into the cannula, has misaligned holes. Therefore, there is no real way to insert the medication until new holes are located and drilled.
+                      The pneumatics still need to be programed as well as the stepper motor and the cutting mechanism. The sealers need to be mounted to the assembly, and a mechanism to drop the medication into the loaders still needs to be designed, manufactured, and attached.
+                      <br>
+                      <br>
+                      Despite this harrowing ordeal in front of me, I am excited to work on and ideally finish this machine one day!
                     </p>
                     <!-- Add more text as needed -->
                 </div>
                 <!-- Skills Tags -->
-                <div style="padding-top:20px; padding-left: 15px;">
+                <div style="padding-top:30px; padding-left: 15px;">
                     <h3>Skills Gained:</h3>
                     <div class="mb-3">
-                        <span class="skill-tag">Conventional Milling</span>
-                        <span class="skill-tag">Soldering</span>
-                        <span class="skill-tag">Battery Assembly</span>
+                        <span class="skill-tag">CAD</span>
+                        <span class="skill-tag">Engineering Drawings</span>
+                        <span class="skill-tag">Sketching</span>
+                        <span class="skill-tag">Lathe</span>
+                        <span class="skill-tag">Milling</span>
+                        <span class="skill-tag" style="margin-top:5px;">Logistics</span>
+                        
+
                         <!-- Add more skill tags as needed -->
                     </div>
                 </div>
@@ -93,63 +178,80 @@
         </div>
     </div>
 
-    <!-- Other Projects Carousel -->
-<div id="otherProjectsCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Project 1"></button>
-      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="1" aria-label="Project 2"></button>
-      <button type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide-to="2" aria-label="Project 3"></button>
-    </div>
-  
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="../Portfolio_Documents/">
-          <img src="../Portfolio_Documents/figure 2a.png" class="d-block w-100" alt="Project 1">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 1 Title</h5>
-            <p>Short description of Project 1.</p>
+    <section style="margin-top: 50px;" class="pt-5 pb-5" id="projects">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-12">
+            <h2 class="text-center mb-5">Other Projects</h2>
+          </div> -->
+          <div class="col-md-4">
+            <a href="../Project_Pages/skateboard.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/Sk8_Orange.jpg" alt="Electric Skateboard" class="img-fluid">
+              <div class="project-info">
+                <h5>Electric Skateboard</h5>
+                <p>Collaboration on an electric skateboard with a recycled battery pack.</p>
+              </div>
+            </div>
+          </a>
           </div>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="link-to-your-project-2.html">
-          <img src="../Portfolio_Documents/Using_Mill.jpg" class="d-block w-100" alt="Project 2">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 2 Title</h5>
-            <p>Short description of Project 2.</p>
+          <div class="col-md-4">
+            <a href="../Project_Pages/dtc.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/X_Ray_Chair.jpg" alt="X-Ray Positioning Device" class="img-fluid">
+              <div class="project-info">
+                <h5>X-Ray Positioning Device</h5>
+                <p>Designing a solution for an incapacitated individual needing lung x-rays.</p>
+              </div>
+            </div>
+          </a>
           </div>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="link-to-your-project-3.html">
-          <img src="../Portfolio_Documents/Using_Mill.jpg" class="d-block w-100" alt="Project 3">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 3 Title</h5>
-            <p>Short description of Project 3.</p>
+          <div class="col-md-4">
+            <a href="../Project_Pages/formula.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/full_assem_with_lid.JPG" alt="Formula" class="img-fluid">
+              <div class="project-info">
+                <h5>Formula EV Accumulator Container</h5>
+                <p>I designed, optimized, and manufactured the container and supporting mounts for the 2024 Formula Electric Vehicle.</p>
+              </div>
+            </div>
+          </a>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
-  
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#otherProjectsCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
+    </section>
+    
 </main>
 
 
-<footer>
-  <p>Here is a bunch of random text Here is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random textHere is a bunch of random text</p>
+<footer class="bg-dark text-light" style="padding-top: 10px; padding-bottom: 10px;">
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col-4 text-start">
+        <!-- Left: LinkedIn and Email Icons -->
+        <a href="https://www.linkedin.com/in/jacob-pomerantz-bab597270/" target="_blank" style="color: #ffffff; margin-right: 15px; text-decoration: none;">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="mailto:jacobpomerantz2025@u.northwestern.edu" style="color: #ffffff;">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </div>
+      
+      <!-- Center: Copyright Notice -->
+      <div class="col-4">
+          &copy; 2024 Jacob Pomerantz
+      </div>
+      
+      <!-- Right: Upwards Arrow -->
+      <div class="col-4 text-end">
+        <a href="#" style="color: #ffffff;">
+            <i class="fas fa-chevron-up fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
