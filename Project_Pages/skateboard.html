@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jacob | Formula Work</title>
+        <title>Jacob | Electric Skateboard</title>
         <link rel="stylesheet" href="../bootstrap.min.css">
         <link rel="stylesheet" href="../style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
@@ -83,25 +83,29 @@
 <main>
 
     <div class="container mt-5" style="padding-top: 50px;">
-      <h2 class="text-center" style="padding-bottom:25px">EV Battery Container & Mounts</h2>
+      <h2 class="text-center" style="padding-bottom:25px">Electric Skateboard</h2>
         <div class="row">
             <!-- Left Column for Image and Collaborators -->
             <div class="col-md-6">
                 <!-- Scrollable Image Box -->
                 <div style="height: 500px; overflow-y: auto; padding-right: 15px;">
-                    <img src="../Portfolio_Documents/_NFR24.JPG" class="img-fluid mb-2" alt="NFR24">
-                    <img src="../Portfolio_Documents/full_assem_with_lid.JPG" class="img-fluid mb-2" alt="Accumulator Container with Lid">
-                    <img src="../Portfolio_Documents/Titanium_Mount_Assembly.JPG" class="img-fluid mb-2" alt="Titanium Mount Assembly">
-                    <img src="../Portfolio_Documents/Accumulator_Mount_v8_FEA.JPG" class="img-fluid mb-2" alt="FEA">
-
+                    <img src="../Portfolio_Documents/Skateboard.jpg" class="img-fluid mb-2" alt="Skateboard Assembled">
+                    <img src="../Portfolio_Documents/Skateboard_ebox.jpg" class="img-fluid mb-2" alt="Skateboard Casing">
+                    <video controls>
+                        <source src="../Portfolio_Documents/IMG_9613.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="../Portfolio_Documents/filtered-3E54625B-4EE3-4973-BE14-B41897DC62F7 (1).MP4" type="video/mp4">
+                    </video>
+                
                     <!-- Add more images with the same structure as needed -->
                 </div>
                 <!-- Collaborators -->
                 <div style="padding-top:30px;">
                     <h3>Collaborators:</h3>
                     <div class="mb-3">
-                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/youssef-abdelhalim/" style="color:aliceblue; text-decoration: none;">Youssef Abdelhalim</a></span>
-                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/benrcox/" style="color:aliceblue; text-decoration: none;">Ben Cox</a></span>
+                      <span class="skill-tag alt-color"><a href="https://www.linkedin.com/in/joshuadfeist/" style="color:aliceblue; text-decoration: none;">Joshua Feist</a></span>
+                      
 
 
                       <!-- Add more skill tags as needed -->
@@ -119,28 +123,40 @@
                       <strong>Introduction:</strong>
                       <br>
                       <br>
-                      Throughout the past 2 years, I have been an active member of the Northwestern Formula Society of Automotive Engineers. Joining the Powertrain subteam in the beginning of my Freshman year, I have spent my time learning about how the car moves. Our team designs, manufactures, and implements the electric battery, the drive shafts, the transmission and the limited slip differential.
+                      In the fall quarter of my freshman year of college, I decided I wanted to build an electric skateboard. Why? I couldn't tell you. But, I was determined to do so and I found someone who could help me. There were 3 parts to this project:
+                      <ol>
+                        <li>Determining the desired specifications</li>
+                        <li>Specifying and ordering parts that could meet our specifications</li>
+                        <li>Assembling (and lots of problem solving)</li>
+                      </ol>
+                      <strong>Speccing:</strong>
                       <br>
                       <br>
-                      <strong>Mission Statement:</strong>
+                      We began this process by determining our desired specifications: range, speed, and power. While hyper-unrealistic, I thought it would be cool to be able to skateboard from Evanston to Chicago (I skated to Skokie once ~3 miles away, never doing that again). Using Excel, we created a spreadsheet that allowed us to easily determine the gear ratio and motors required in order to achieve our determined speed and power. The spreadsheet is linked <a href="https://docs.google.com/spreadsheets/d/1QU5Wmcal1zzn4LTgZ0iOzdvFL0MTSP_62-MB9qiQr-g/edit?usp=sharing">here</a>.
                       <br>
                       <br>
-                      Our team works to make the car move in time for competition while minimizing cost and weight. 
+                      Furthermore, we decided it would be easiest to buy a truck kit with wheels and gears for the pulley system instead of making our own. This kit had a gear ratio of 2.4. Our motors had a 192 KV rating. This translated to a speed of about 30mph without a load.
                       <br>
                       <br>
-                      <strong>My Project:</strong>
+                      In order to power the motors enough to achieve our desired speed, we decided on using 26650 lithium ion cells in a 12s3p configuration. We bought some recycled cells off battery hookup and soldered on the busbars. We chose a BMS to protect against 100 Amps for a 12s battery and a dual esc for the two motor drive.
                       <br>
                       <br>
-                      2022: During my freshman year, I was one of the team lead manufacturers. I used conventional mills, CNCs, and most significantly, the waterjet, to manufacture various components for the car. I altered maintenance plugs to fit to specification, created jigs to support car tabs and frame tubes during welding, and manufactured all tabs through use of the waterjet. Furthermore, I used the waterjet to manufacture the 2022 accumulator container from 1 ⁄ 8 '' steel and electrical boxes from polycarbonate. This involved extensive use of the waterjet, learning the ins and outs of the machine.
+                      <strong>Assembly</strong>
                       <br>
                       <br>
-                      2023: The project I am most proud of is what I have worked on throughout the course of this year. This year, I have worked with a team of other engineers to design and manufacture the accumulator container. There is an electrical team and a mechanical team. My role on the mechanical team was designing the container itself, and the mounts to support it within the chassis. Below are some things I learned about through my role working on the accumulator container and mounts:
+                      The assembly process consisted mostly of many small processes, but was a fun learning experience.
+                      <br>
                       <ul>
-                        <li>Sheet Metal: We designed the container from <i>one piece</i> of sheet metal. We have outsourced manufacturing to a local company, Bystronic, for lasercutting and sheet metal bending of the accumulator. I worked with Bystronic to design this container keeping in mind bend radiuses, flange length, and Aluminum 6061 material properties.</li>
-                        <li>Adhesives: We are using Betamate 2090 to adhere the accumulator mounts to the container. Rules specify that the container must be able to withstand 15 kN in each direction. After doing some math, we determined that Betamate 2090 would be strong enough to connect the mounts to the container.</li>
-                        <li>FEA and Topology Optimization: My initial mount design weighed roughly 860 grams. These were made from plain carbon steel. After receiving a sponsorship from an additive manufacutring company, we were able to 3D print optimized mounts from titanium. Working with an upper classmen, we optimized these mounts from titatnium and decreased the weight to 153 grams. </li>
-                      </ul>
-                      
+                        <li>Battery Assembly: We soldered the parallel packs together with tin bussbars. Then we soldered the packs in series and soldered the connections to the BMS.</li>
+                        <li>Polycarbonate Casing: I designed a case for the electrical components on Solidworks, matching the geometry of the skateboard, and waterjet it from 1/8" polycarbonate. After this, I used the sheet metal bender to bend up the sides.</li>
+                        <li>Anodizing: The motors had a keyway without a key. We took key stock and shaved down our own, then heated it up with a blowtorch before dunking it in cold water to anodize it.</li>
+                        <li>Attachment: We drilled holes through the board and the casing. We fastened the two together with m4 bolts. However, my first casing cracked due to mechanical vibrations. On the second iteration, I used rubber spacers to prevent cracking. </li>
+                        <li>Finishing Touches: We used vibration dampening foam to protect the batteries. We used adhesive heatshrink to connect the motors to the ESC. We sprayed the electronic components with conformal coating and filled in the corners of the casing with silicon caulk. </li>
+                        <br>
+                        <strong>Conclusion:</strong>
+                        <br>
+                        <br>
+                        The final product is awesome. It reaches a top speed of 25 mph with me on it and accelerated way too fast. The battery never dies and now I am never late for class!
                     </p>
                     <!-- Add more text as needed -->
                 </div>
@@ -148,10 +164,10 @@
                 <div style="padding-top:30px; padding-left: 15px;">
                     <h3>Skills Gained:</h3>
                     <div class="mb-3">
-                        <span class="skill-tag">Battery Design</span>
-                        <span class="skill-tag">CAD</span>
-                        <span class="skill-tag">FEA</span>
-                        <span class="skill-tag">Teamwork & Communication</span>
+                        <span class="skill-tag">Battery Assembly</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Electronics Design</span>
 
                         <!-- Add more skill tags as needed -->
                     </div>
@@ -166,28 +182,7 @@
           <div class="col-12">
             <h2 class="text-center mb-5">Other Projects</h2>
           </div>
-          <div class="col-md-4">
-            <a href="../Project_Pages/hiv.html">
-            <div class="project-card">
-              <img src="../Portfolio_Documents/Machine_Thumbnail.jpg" alt="HIV Implant Automation" class="img-fluid">
-              <div class="project-info">
-                <h5>HIV Implant Automation</h5>
-                <p>Design and manufacture of a machine for HIV implant medication.</p>
-              </div>
-            </div>
-          </a>
-          </div>
-          <div class="col-md-4">
-            <a href="../Project_Pages/skateboard.html">
-            <div class="project-card">
-              <img src="../Portfolio_Documents/Sk8_Orange.jpg" alt="Electric Skateboard" class="img-fluid">
-              <div class="project-info">
-                <h5>Electric Skateboard</h5>
-                <p>Collaboration on an electric skateboard with a recycled battery pack.</p>
-              </div>
-            </div>
-          </a>
-          </div>
+
           <div class="col-md-4">
             <a href="../Project_Pages/dtc.html">
             <div class="project-card">
@@ -197,8 +192,34 @@
                 <p>Designing a solution for an incapacitated individual needing lung x-rays.</p>
               </div>
             </div>
-          </a>
+            </a>
           </div>
+          
+
+          <div class="col-md-4">
+            <a href="../Project_Pages/formula.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/full_assem_with_lid.JPG" alt="Formula" class="img-fluid">
+              <div class="project-info">
+                <h5>Formula EV Accumulator Container</h5>
+                <p>I designed, optimized, and manufactured the container and supporting mounts for the 2024 Formula Electric Vehicle.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a href="../Project_Pages/hiv.html">
+            <div class="project-card">
+              <img src="../Portfolio_Documents/Machine_Thumbnail.jpg" alt="HIV Implant Automation" class="img-fluid">
+              <div class="project-info">
+                <h5>HIV Implant Automation</h5>
+                <p>Design and manufacture of a machine for HIV implant medication.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
