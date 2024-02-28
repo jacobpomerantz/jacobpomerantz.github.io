@@ -1,7 +1,6 @@
  /* Index Css */
 
 .aboutme{
-  padding-top: 50px;
   padding-bottom: 150px;
 }
 
@@ -9,7 +8,7 @@
   border-radius: 10px;
 }
 .aboutme h1{
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .aboutme p {
   text-align: justify; /* Improves readability */
