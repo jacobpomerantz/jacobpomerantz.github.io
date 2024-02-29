@@ -183,9 +183,3 @@ body, h2, h3, p {
   padding: 0.5em;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
