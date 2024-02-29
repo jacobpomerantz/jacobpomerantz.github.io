@@ -27,6 +27,12 @@
     padding-bottom: 80px;
   }
 }
+@media (max-width: 767px) {
+  .card-img-top {
+    min-height: 220px;
+  }
+}
+
 
  /* Project Page Css */
 #projects h2 {
