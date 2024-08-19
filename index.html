@@ -87,6 +87,43 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.slide-in-section {
+  opacity: 0;
+  transform: translateX(-20vw);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.slide-in-section-alt {
+  opacity: 0;
+  transform: translateX(20vw);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.zoom-in-section {
+  opacity: 0;
+  transform: scale(0.8);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
     </style>
 
     
@@ -185,7 +222,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette align-items-center">
+    <div class="row featurette align-items-center slide-in-section">
       <div class="col-md-7">
         <div>
           <h2 class="featurette-heading fw-normal lh-1">Formula Society of Automotive Engineers. <span class="text-muted"><br>We are electric now.</span></h2>
@@ -201,7 +238,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette align-items-center">
+    <div class="row featurette align-items-center slide-in-section-alt">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">Working to change the world one machine at a time. <span class="text-body-secondary"><br>Check it out.</span></h2>
         <p class="lead">I am working with <a target="_blank" href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/ehmann-kornel.html" style="text-decoration: none;">Professor Kornel Ehmann</a> to design, manufacture, and assemble an autonomous machine that develops HIV implant medication. <a style="color: rgb(var(--bs-tertiary-color-rgb)); " href="./Project_Pages/hiv.html">Read more</a>.</p>
@@ -213,7 +250,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette align-items-center">
+    <div class="row featurette align-items-center slide-in-section">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Electric Skateboard. <span class="text-body-secondary"><br>It’s Fast and Furious.</span></h2>
         <p class="lead">I designed and assembled an electric skateboard with recycled battery cells in a 12s3p configuration. <a style="color: rgb(var(--bs-tertiary-color-rgb));" href="./Project_Pages/skateboard.html">Read more</a>.</p>
@@ -264,4 +301,24 @@
 
     </body>
     <script src="/dark.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".slide-in-section, .slide-in-section-alt");
+    
+      const observerOptions = {
+        threshold: 0.1  // Adjust this value as needed
+      };
+    
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);  // Stop observing once the element is visible
+          }
+        });
+      }, observerOptions);
+    
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });</script>
 </html>
