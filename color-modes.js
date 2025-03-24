@@ -78,3 +78,25 @@
       })
   })
 })()
+
+
+
+
+const projectsSrc = ["../Project_Pages/dtc.html", "../Project_Pages/formula.html", "../Project_Pages/hiv.html", "../Project_Pages/skateboard.html","../Project_Pages/valve.html"];
+const projectsImg = ["../Portfolio_Documents/X_Ray_Chair.jpg","../Portfolio_Documents/full_assem_with_lid.JPG","../Portfolio_Documents/Machine_Thumbnail.jpg","../Portfolio_Documents/Sk8_Orange.jpg","../Portfolio_Documents/Pneumatic_Sequencing_Valve_Numbered.png"];
+var numberOfTurn = 0;
+function left()
+{
+var first = document.getElementById("first"); 
+var second = document.getElementById("second"); 
+var third = document.getElementById("third"); 
+first.setAttribute("src",projectsImg[numberOfTurn]);
+second.setAttribute("src",projectsImg[numberOfTurn+1]);
+third.setAttribute("src",projectsImg[numberOfTurn+2]);
+numberOfTurn++;
+if (numberOfTurn>3){
+numberOfTurn=0;
+}
+}
+
+
