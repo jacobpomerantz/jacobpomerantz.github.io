@@ -1,72 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jacob | Formula Work</title>
-        <link rel="stylesheet" href="../bootstrap.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="../Portfolio_Documents/favicon.png"/>
 
-        <style>
-          .project-card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 0.25rem; /* Adjust the border-radius as needed */
-            width: 100%; /* Ensures the card takes the full width of its container */
-            height: 300px; /* Example fixed height */
-          }
-          .project-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Cover the card area, maintaining aspect ratio */
-            transition: transform 0.5s ease; /* Smooth transition for zoom effect */
-          }
-          .project-card:hover img {
-            transform: scale(1.05); /* Zoom effect on hover */
-          }
-          .project-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent overlay */
-            color: white;
-            padding: 20px;
-            transform: translateY(100%);
-            transition: transform 0.5s ease; /* Smooth transition for slide effect */
-          }
-          .project-card:hover .project-info {
-            transform: translateY(0);
-          }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob | Formula Work</title>
+  <link rel="stylesheet" href="../bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../Portfolio_Documents/favicon.png" />
 
-          #projects {
-            padding-top: 0px !important;
-          }
-          .container > .row:last-child {
-            margin-bottom: 0 !important;
-          }
-          .container > .row > .col-md-6 {
-            padding-bottom: 0 !important;
-          }
+  <style>
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.25rem;
+      /* Adjust the border-radius as needed */
+      width: 100%;
+      /* Ensures the card takes the full width of its container */
+      height: 300px;
+      /* Example fixed height */
+    }
 
-          footer {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-         }
-        </style>
-        
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Cover the card area, maintaining aspect ratio */
+      transition: transform 0.5s ease;
+      /* Smooth transition for zoom effect */
+    }
 
-    </head>
-<body  class="project">
+    .project-card:hover img {
+      transform: scale(1.05);
+      /* Zoom effect on hover */
+    }
+
+    .project-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      /* Semi-transparent overlay */
+      color: white;
+      padding: 20px;
+      transform: translateY(100%);
+      transition: transform 0.5s ease;
+      /* Smooth transition for slide effect */
+    }
+
+    .project-card:hover .project-info {
+      transform: translateY(0);
+    }
+
+    #projects {
+      padding-top: 0px !important;
+    }
+
+    .container>.row:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .container>.row>.col-md-6 {
+      padding-bottom: 0 !important;
+    }
+
+    footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+
+</head>
+
+<body class="project">
 
   <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <img style="border-radius: 100%; margin-right: 5px;" width="50px" height="50px" src="../Portfolio_Documents/logowork.png">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <img style="border-radius: 100%; margin-right: 5px;" width="50px" height="50px"
+          src="../Portfolio_Documents/logowork.png">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse" style="font-size: 18px;">
@@ -85,91 +103,219 @@
               <a class="nav-link" href="#">Philosophy</a>
             </li> -->
           </ul>
-          <a target="_blank" href="/Portfolio_Documents/Official_Resume.pdf"><button class="btn btn-outline-secondary" type="submit">Resume</button></a>
-          
+          <a target="_blank" href="/Portfolio_Documents/Official_Resume.pdf"><button class="btn btn-outline-secondary"
+              type="submit">Resume</button></a>
+
         </div>
       </div>
     </nav>
   </header>
-<main>
+  <main>
 
     <div class="container mt-5" style="padding-top: 50px;">
-      <h2 class="text-center" style="padding-bottom:25px; font-family: 'Times New Roman', Times, serif; font-size: 36px;">EV Battery Container & Mounts</h2>
-        <div class="row">
-            <!-- Left Column for Image and Collaborators -->
-            <div class="col-md-6">
-                <!-- Scrollable Image Box -->
-                <div style="height: 500px; overflow-y: auto; padding-right: 15px;">
-                    <img src="../Portfolio_Documents/NFR24.jpg" class="img-fluid mb-2" alt="NFR24">
-                    <img src="../Portfolio_Documents/full_assem_with_lid.JPG" class="img-fluid mb-2" alt="Accumulator Container with Lid">
-                    <img src="../Portfolio_Documents/Titanium_Mount_Assembly.JPG" class="img-fluid mb-2" alt="Titanium Mount Assembly">
-                    <img src="../Portfolio_Documents/Accumulator_Mount_v8_FEA.JPG" class="img-fluid mb-2" alt="FEA">
-                    <img src="../Portfolio_Documents/Welding.jpg" class="img-fluid mb-2" alt="NFR24">
+      <h2 class="text-center"
+        style="padding-bottom:25px; font-family: 'Times New Roman', Times, serif; font-size: 36px;">Suspension Uprights
+        Top-Op</h2>
+      <div class="row">
+        <!-- Left Column for Image and Collaborators -->
+        <div class="col-md-6">
+          <!-- Scrollable Image Box -->
+          <div style="height: 500px; overflow-y: auto; padding-right: 15px;">
+            <img src="../Portfolio_Documents/TopOp_Front.png" class="img-fluid mb-2" alt="Top-Op Front Angle">
+            <img src="../Portfolio_Documents/Cornering_Loads.png" style="width: 150%;" class="img-fluid mb-2"
+              alt="Load Cases due to Cornering">
+            <img src="../Portfolio_Documents/Brakeing Loads.png" style="width: 150%;" class="img-fluid mb-2"
+              alt="Load Cases due to Braking">
+            <img src="../Portfolio_Documents/Volume_Fraction.png" style="width: 150%;" class="img-fluid mb-2"
+              alt="Iterative Removal of Material based on Volume Fraction">
+            <img src="../Portfolio_Documents/Convergence_History.png" class="img-fluid mb-2" alt="Convergence History">
+            <img src="../Portfolio_Documents/TopOP_FEA.png" class="img-fluid mb-2" alt="FEA of Optimized Result">
+            <img src="../Portfolio_Documents/TopOpBack_Angle.png" class="img-fluid mb-2" alt="Top-Op Back Angle">
+            <!-- Add more images with the same structure as needed -->
+          </div>
+          <!-- Collaborators -->
 
-                    <!-- Add more images with the same structure as needed -->
-                </div>
-                <!-- Collaborators -->
-                <div style="padding-top:30px;">
-                    <h3>Collaborators:</h3>
-                    <div class="mb-3">
-                      <span class="skill-tag alt-color"><a target="_blank" href="https://www.linkedin.com/in/youssef-abdelhalim/" style="color:aliceblue; text-decoration: none;">Youssef Abdelhalim</a></span>
-                      <span class="skill-tag alt-color"><a target="_blank" href="https://www.linkedin.com/in/benrcox/" style="color:aliceblue; text-decoration: none;">Ben Cox</a></span>
-
-
-                      <!-- Add more skill tags as needed -->
-                  </div>
-                    <!-- Add more collaborators as needed -->
-                </div>
-            </div>
-
-            <!-- Right Column for Text and Skills -->
-            <div class="col-md-6">
-
-                <!-- Scrollable Text Box -->
-                <div style="height: 500px; overflow-y: auto; padding-left: 15px; padding-right: 15px;">
-                    <p>
-                      <strong>Introduction:</strong>
-                      <br>
-                      <br>
-                      Throughout the past 2 years, I have been an active member of the Northwestern Formula Society of Automotive Engineers. Joining the Powertrain subteam in the beginning of my Freshman year, I have spent my time learning about how the car moves. Our team designs, manufactures, and implements the electric battery, the drive shafts, the transmission and the limited slip differential.
-                      <br>
-                      <br>
-                      <strong>Mission Statement:</strong>
-                      <br>
-                      <br>
-                      Our team works to make the car move in time for competition while minimizing cost and weight. 
-                      <br>
-                      <br>
-                      <strong>My Projects:</strong>
-                      <br>
-                      <br>
-                      <i><u>Accumulator Container:</u></i> The project I am most proud of is what I have worked on throughout the course of this year. This year, I have worked with a team of other engineers to design and manufacture the accumulator container. There is an electrical team and a mechanical team. My role on the mechanical team was designing the container itself, and the mounts to support it within the chassis. Below are some things I learned about through my role working on the accumulator container and mounts:
-                      <ul>
-                        <li>Sheet Metal: We designed the container from <i>one piece</i> of sheet metal. We have outsourced manufacturing to a local company, Bystronic, for laser cutting and sheet metal bending of the accumulator. I worked with Bystronic to design this container keeping in mind bend radiuses, flange length, and Aluminum 6061 material properties.</li>
-                        <li>Adhesives: We are using Betamate 2090 to adhere the accumulator mounts to the container. Rules specify that the container must be able to withstand 15 kN in each direction. After doing some math, we determined that Betamate 2090 would be strong enough to connect the mounts to the container.</li>
-                        <li>FEA and Topology Optimization: My initial mount design weighed roughly 860 grams. These were made from plain carbon steel. After receiving a sponsorship from an additive manufacturing company, we were able to 3D print optimized mounts from titanium. Working with an upperclassman, we optimized these mounts from titanium and decreased the weight to 153 grams. </li>
-                      </ul>
-                      <i><u>Manufacturing Lead:</u></i> During my freshman year, I was one of the team lead manufacturers. I used conventional mills, CNCs, and most significantly, the waterjet, to manufacture various components for the car. I altered maintenance plugs to fit to specification, created jigs to support car tabs and frame tubes during welding, and manufactured all tabs through use of the waterjet. Furthermore, I used the waterjet to manufacture the 2022 accumulator container from 1 ⁄ 8 '' steel and electrical boxes from polycarbonate. This involved extensive use of the waterjet, learning the ins and outs of the machine. Lastly, while my welding skills aren't great, I spent many hours learning TIG welding from our team's chief mechanical engineer.
-                      
-                      
-                    </p>
-                    <!-- Add more text as needed -->
-                </div>
-                <!-- Skills Tags -->
-                <div style="padding-top:30px; padding-left: 15px;">
-                    <h3>Skills Used:</h3>
-                    <div class="mb-3">
-                        <span class="skill-tag">Battery Design</span>
-                        <span class="skill-tag">CAD</span>
-                        <span class="skill-tag">FEA</span>
-                        <span class="skill-tag">Welding</span>
-                        <span class="skill-tag" style="margin-top: 5px;">Teamwork & Communication</span>
-
-                        <!-- Add more skill tags as needed -->
-                    </div>
-                </div>
-            </div>
         </div>
+
+        <!-- Right Column for Text and Skills -->
+        <div class="col-md-6">
+
+          <!-- Scrollable Text Box -->
+          <div style="height: 500px; overflow-y: auto; padding-left: 15px; padding-right: 15px;">
+            <p>
+              <strong>Abstract:</strong>
+              <br>
+              <br>
+              The design of a Formula 1 suspension upright is a critical engineering challenge that requires balancing
+              structural stiffness, mass minimization, and the time and cost associated with manufacturability and
+              computational mechanics. With the right balance, these objectives can be optimized. This report presents a
+              topology optimization approach to redesigning suspension uprights while satisfying performance constraints
+              including stress limits, deflection requirements, and dynamic behavior. Finite Element Analysis (FEA)
+              using Ansys Discovery is used to evaluate multiple loading scenarios, including braking and cornering
+              forces, and ensure the optimized design meets real-world operational demands. The optimization process
+              incorporates material selection, defining simulation objectives, and implementing manufacturing
+              constraints for additive manufacturing techniques. The final design aims to reduce weight while
+              maintaining structural integrity. This project was conducted as part of the 2019 USACM Thematic Conference
+              - Topology Optimization Roundtable, a design challenge presented to collegiate Formula 1 teams to identify
+              innovative engineering solutions for additive manufacturing. <br>
+              <br>
+              <strong>Physics-Based Modeling and Engineering Analysis:</strong>
+              <br>
+              <br>
+              Suspension uprights are subjected to a combination of forces [N], including braking, cornering, and impact
+              loads. To accurately design and optimize this component, engineers rely on physics-based modeling
+              techniques, such as: Finite Element Analysis (FEA) - used to simulate stress distributions, deflections,
+              and failure points under various loading conditions.
+              In addition to FEA, material selection plays a critical role in the design process. Engineers evaluate
+              material properties (e.g., density, yield strength, thermal conductivity) to choose the best material for
+              the application. For this project, Aluminum 6061-T6, Titanium 6Al-4V, and Stainless Steel 304 were
+              presented based on their mechanical properties, weight, and suitability for additive manufacturing.
+              The uprights were subjected to the following loads:
+            <table style="
+  border: 2px solid white; 
+  border-collapse: separate; 
+  border-spacing: 8px; 
+  color: white;
+  background-color: #222; /* optional for contrast */
+">
+              <tr>
+                <th style="border: 1px solid white; padding: 10px;">Case</th>
+                <th style="border: 1px solid white; padding: 10px;">Inside Cornering [N]</th>
+                <th style="border: 1px solid white; padding: 10px;">Outside Cornering [N]</th>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">C1</td>
+                <td style="border: 1px solid white; padding: 10px;">-50</td>
+                <td style="border: 1px solid white; padding: 10px;">140</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">C2</td>
+                <td style="border: 1px solid white; padding: 10px;">-150</td>
+                <td style="border: 1px solid white; padding: 10px;">645</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">C3</td>
+                <td style="border: 1px solid white; padding: 10px;">380</td>
+                <td style="border: 1px solid white; padding: 10px;">1920</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">C4</td>
+                <td style="border: 1px solid white; padding: 10px;">45</td>
+                <td style="border: 1px solid white; padding: 10px;">-1750</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">C5</td>
+                <td style="border: 1px solid white; padding: 10px;">175</td>
+                <td style="border: 1px solid white; padding: 10px;">-3975</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">C6</td>
+                <td style="border: 1px solid white; padding: 10px;">-85</td>
+                <td style="border: 1px solid white; padding: 10px;">405</td>
+              </tr>
+              <tr>
+                <td colspan="3" style="height: 20px;"></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">B1</td>
+                <td style="border: 1px solid white; padding: 10px;">-2500</td>
+                <td style="border: 1px solid white; padding: 10px;">390</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">B2</td>
+                <td style="border: 1px solid white; padding: 10px;">1700</td>
+                <td style="border: 1px solid white; padding: 10px;">-340</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">B3</td>
+                <td style="border: 1px solid white; padding: 10px;">2160</td>
+                <td style="border: 1px solid white; padding: 10px;">360</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">B4</td>
+                <td style="border: 1px solid white; padding: 10px;">4500</td>
+                <td style="border: 1px solid white; padding: 10px;">-1100</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">B5</td>
+                <td style="border: 1px solid white; padding: 10px;">-6500</td>
+                <td style="border: 1px solid white; padding: 10px;">800</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">B6</td>
+                <td style="border: 1px solid white; padding: 10px;">2170</td>
+                <td style="border: 1px solid white; padding: 10px;">-425</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid white; padding: 10px;">B7</td>
+                <td style="border: 1px solid white; padding: 10px;">20200 [N-mm]</td>
+                <td style="border: 1px solid white; padding: 10px;">-4200 [N-mm]</td>
+              </tr>
+            </table>
+
+            <br>
+            <br>
+            <strong>Optimization in Ansys Discovery:</strong>
+            <br>
+            <br>
+            Ansys Discovery uses a gradient-based optimization algorithm to solve the topology optimization problem.
+            This algorithm iteratively adjusts the material distribution within the design domain to minimize the
+            objective function (e.g., compliance or mass) while satisfying constraints.
+            At each iteration, the finite element analysis (FEA) is performed to evaluate the structural response under
+            the applied loads. The densities are then updated based on the sensitivity of the objective function to
+            changes in density. This process continues until the solution converges to an optimal material distribution
+            that meets the design goals.
+            <br>
+            <br>
+            <strong>Results and Analysis:</strong>
+            <br>
+            <br>
+            The optimization process underwent multiple iterations to refine material distribution and achieve a design
+            that met all constraints. Initially, a baseline simulation identified regions of high stress and excess
+            material. Subsequent iterations adjusted the volume fraction and overhang prevention angle to enhance
+            manufacturability and structural efficiency. The final design was achieved using a 10% volume fraction with
+            a 20° overhead angle constraint. The final design and its results are shown below:
+            <ul>
+              <li>Mass: 0.64 [kg]</li>
+              <li>Maximum von Mises Stress: 113 [MPa] (below the 250 MPa limit)</li>
+              <li>Maximum Deflection: 0.114 [mm] (within the 0.12 mm constraint)</li>
+              <li>Resonant Frequency: 180.05 [Hz] (above the 75 Hz requirement)</li>
+              <li>Factor of Safety (FOS): 2.28 </li>
+              <li>Computing Time: 2.5 [hrs]</li>
+            </ul>
+            <br>
+            <br>
+            <strong>Conclusion:</strong>
+            <br>
+            <br>
+            <u>Trade-Offs and Final Design Evatuation:</u> The optimization process involved balancing competing objectives. First, mass and deflection: reducing the volume fraction slightly increased deflection, so a balance had to be chosen between the two.
+            Secondly, material selection tradeoffs had to be balanced. Aluminum 6061-T6 provided weight savings and thermal benefits but required careful stress management as opposed to titanium or steel. Lastly, for manufacturability constraints such as overhang prevention and minimum member thickness ensured feasibility for additive manufacturing but imposed geometric limitations.
+            <br>
+            <br>
+            <u>Challenges and Considerations:</u> When setting up the simulation, there are many challenges that can yield inaccurate results. One such challenge is ensuring proper load paths. Without a load path that connects the loading location to the main body, the simulation can yield geometries with detached components.
+            Additionally, the minimum geometry thickness must be chosen such that all members are larger than it. Lastly, if the forces aren’t sufficient enough, not enough material will be removed to make an impactful result.
+            <br>
+            <br>
+            <u>Validation and Verification:</u> To validate the effectiveness of the design, it was rerun through Ansys Mechanical to recalculate the stresses throughout the part. While the results were not exactly the same as the topology simulation had suggested, it did show that the part still met all of the design constraints.
+             Stress concentrations occur at areas of rapidly changing geometry (e.g., holes, changing thickness) and the maximum Von Mises stress shown in red is about 118 [MPa].
+
+
+
+            </p>
+            <!-- Add more text as needed -->
+          </div>
+          <!-- Skills Tags -->
+          <div style="padding-top:30px; padding-left: 15px;">
+            <h3>Skills Used:</h3>
+            <div class="mb-3">
+              <span class="skill-tag">Topology Optimization</span>
+              <span class="skill-tag">FEA</span>
+
+              <!-- Add more skill tags as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section style="margin-top: 50px;" class="pt-5 pb-5" id="projects">
@@ -177,74 +323,77 @@
         <div class="row">
           <div class="col-md-4">
             <a href="../Project_Pages/hiv.html">
-            <div class="project-card">
-              <img src="../Portfolio_Documents/Machine_Thumbnail.jpg" alt="HIV Implant Automation" class="img-fluid">
-              <div class="project-info">
-                <h5>HIV Implant Automation</h5>
-                <p>Design and manufacture of a machine for HIV implant medication.</p>
+              <div class="project-card">
+                <img src="../Portfolio_Documents/Machine_Thumbnail.jpg" alt="HIV Implant Automation" class="img-fluid">
+                <div class="project-info">
+                  <h5>HIV Implant Automation</h5>
+                  <p>Design and manufacture of a machine for HIV implant medication.</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
           </div>
           <div class="col-md-4">
             <a href="../Project_Pages/skateboard.html">
-            <div class="project-card">
-              <img src="../Portfolio_Documents/Sk8_Orange.jpg" alt="Electric Skateboard" class="img-fluid">
-              <div class="project-info">
-                <h5>Electric Skateboard</h5>
-                <p>Collaboration on an electric skateboard with a recycled battery pack.</p>
+              <div class="project-card">
+                <img src="../Portfolio_Documents/Sk8_Orange.jpg" alt="Electric Skateboard" class="img-fluid">
+                <div class="project-info">
+                  <h5>Electric Skateboard</h5>
+                  <p>Collaboration on an electric skateboard with a recycled battery pack.</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
           </div>
           <div class="col-md-4">
             <a href="../Project_Pages/dtc.html">
-            <div class="project-card">
-              <img src="../Portfolio_Documents/X_Ray_Chair.jpg" alt="X-Ray Positioning Device" class="img-fluid">
-              <div class="project-info">
-                <h5>X-Ray Positioning Device</h5>
-                <p>Designing a solution for an incapacitated individual needing lung x-rays.</p>
+              <div class="project-card">
+                <img src="../Portfolio_Documents/X_Ray_Chair.jpg" alt="X-Ray Positioning Device" class="img-fluid">
+                <div class="project-info">
+                  <h5>X-Ray Positioning Device</h5>
+                  <p>Designing a solution for an incapacitated individual needing lung x-rays.</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    
-</main>
+
+  </main>
 
 
-<footer class="bg-dark text-light" style="padding-top: 10px; padding-bottom: 10px;">
-  <div class="container text-center">
-    <div class="row align-items-center">
-      <div class="col-4 text-start">
-        <!-- Left: LinkedIn and Email Icons -->
-        <a href="https://www.linkedin.com/in/jacob-pomerantz-bab597270/" target="_blank" style="color: #ffffff; margin-right: 15px; text-decoration: none;">
+  <footer class="bg-dark text-light" style="padding-top: 10px; padding-bottom: 10px;">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col-4 text-start">
+          <!-- Left: LinkedIn and Email Icons -->
+          <a href="https://www.linkedin.com/in/jacob-pomerantz-bab597270/" target="_blank"
+            style="color: #ffffff; margin-right: 15px; text-decoration: none;">
             <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="mailto:jacobpomerantz2025@u.northwestern.edu" style="color: #ffffff;">
+          </a>
+          <a href="mailto:jacobpomerantz2025@u.northwestern.edu" style="color: #ffffff;">
             <i class="fas fa-envelope fa-2x"></i>
-        </a>
-      </div>
-      
-      <!-- Center: Copyright Notice -->
-      <div class="col-4">
+          </a>
+        </div>
+
+        <!-- Center: Copyright Notice -->
+        <div class="col-4">
           &copy; 2024 Jacob Pomerantz
-      </div>
-      
-      <!-- Right: Upwards Arrow -->
-      <div class="col-4 text-end">
-        <a href="#" style="color: #ffffff;">
+        </div>
+
+        <!-- Right: Upwards Arrow -->
+        <div class="col-4 text-end">
+          <a href="#" style="color: #ffffff;">
             <i class="fas fa-chevron-up fa-2x"></i>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="/dark.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="/dark.js"></script>
 </body>
+
 </html>
